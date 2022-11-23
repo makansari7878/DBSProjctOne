@@ -1,5 +1,7 @@
 package com.example.dbsprojctone
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,9 +19,28 @@ class MainActivity : AppCompatActivity() {
         var usernameTextView = findViewById<TextView>(R.id.textViewUsernanme)
 
         submitButton.setOnClickListener {
-          var username =   usernameEditText.text.toString()
+        /*  var username =   usernameEditText.text.toString()
             Toast.makeText(this, "username is $username", Toast.LENGTH_LONG).show()
             usernameTextView.setText(username)
+
+
+            var myIntent = Intent(this, SecondActivity::class.java)
+            myIntent.putExtra("keyun",username)
+
+            var user = User("Ravi", "abcd")
+            myIntent.putExtra("keyobj",user)
+
+            startActivity(myIntent)*/
+
+         /*   var myIntent = Intent("arvind")
+            startActivity(myIntent)*/
+
+            /*var myIntnet = Intent(Intent.ACTION_DIAL, Uri.parse("tel:958738838"))
+            startActivity(myIntnet)*/
+
+            var myIntnet = Intent(Intent.ACTION_VIEW, Uri.parse("https://yahoo.com"))
+            startActivity(myIntnet)
+
         }
     }
 }
