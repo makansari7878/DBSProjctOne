@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             /*var myIntnet = Intent(Intent.ACTION_DIAL, Uri.parse("tel:958738838"))
             startActivity(myIntnet)*/
 
-            var myIntnet = Intent(Intent.ACTION_VIEW, Uri.parse("https://yahoo.com"))
-            startActivity(myIntnet)
+            /*var myIntnet = Intent(Intent.ACTION_VIEW, Uri.parse("https://yahoo.com"))
+            startActivity(myIntnet)*/
 
         }
     }
