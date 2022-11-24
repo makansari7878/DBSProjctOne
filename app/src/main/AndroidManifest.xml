@@ -11,10 +11,13 @@
         android:label="DBS"
         android:roundIcon="@drawable/spiderman"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DBSProjctOne"
+        android:theme="@style/mystyle"
         tools:targetApi="31">
         <activity
+            android:launchMode="standard"
             android:name=".SecondActivity"
+            android:theme="@style/mystyle"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="arvind" />

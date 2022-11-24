@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spiderman"
+
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="27dp"
-        android:text="Hello and Welcome"
+        android:text="@string/hellooo"
         android:textColor="#FFEB3B"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageViewSpider"
@@ -55,4 +55,15 @@
         app:layout_constraintEnd_toEndOf="@+id/textViewUsernanme"
         app:layout_constraintStart_toStartOf="@+id/textViewUsernanme"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/myname"
+style="@style/child"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUsernanme"
+        app:layout_constraintStart_toStartOf="@+id/textViewUsernanme" />
 </androidx.constraintlayout.widget.ConstraintLayout>
